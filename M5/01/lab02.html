@@ -1,0 +1,2008 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <title>LAB 2 - Build an API proxy tier by using Azure API Management · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 4.0.4">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="lab03.html" />
+    
+    
+    <link rel="prev" href="lab01.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">About</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    AZURE JOURNEY
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Develop Azure Compute Solutions</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../../M1/01/">
+            
+                <a href="../../M1/01/">
+            
+                    
+                    1. Implement IaaS solutions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../../M1/01/Provision_vm.html">
+            
+                <a href="../../M1/01/Provision_vm.html">
+            
+                    
+                    1.1. Provision virtual machines in Azure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../../M1/01/Create_arm.html">
+            
+                <a href="../../M1/01/Create_arm.html">
+            
+                    
+                    1.2. Create and deploy Azure Resource Manager templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../../M1/01/Manage_container.html">
+            
+                <a href="../../M1/01/Manage_container.html">
+            
+                    
+                    1.3. Manage container images in Azure Container Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../../M1/01/Run_container.html">
+            
+                <a href="../../M1/01/Run_container.html">
+            
+                    
+                    1.4 Run container images in Azure Container Instances
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on LABS</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../../M1/01/lab01.html">
+            
+                <a href="../../M1/01/lab01.html">
+            
+                    
+                    Lab 1 - Create a VM by using the Azure Command-Line Interface (CLI)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../../M1/01/lab02.html">
+            
+                <a href="../../M1/01/lab02.html">
+            
+                    
+                    Lab 2 - Create a Docker container image and deploy it to Azure Container Registry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../../M1/01/lab03.html">
+            
+                <a href="../../M1/01/lab03.html">
+            
+                    
+                    Lab 3 - Deploy an Azure container instance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../../M1/02/">
+            
+                <a href="../../M1/02/">
+            
+                    
+                    2. Create Azure App Service Web Apps
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../../M1/02/Azure_app_service.html">
+            
+                <a href="../../M1/02/Azure_app_service.html">
+            
+                    
+                    2.1. Explore Azure App Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../../M1/02/Config_app_service.html">
+            
+                <a href="../../M1/02/Config_app_service.html">
+            
+                    
+                    2.2. Configure web app settings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../../M1/02/Scaling_app_service.html">
+            
+                <a href="../../M1/02/Scaling_app_service.html">
+            
+                    
+                    2.3. Scale apps in Azure App Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../../M1/02/Azure_app_service_deploy.html">
+            
+                <a href="../../M1/02/Azure_app_service_deploy.html">
+            
+                    
+                    2.4. Explore Azure App Service deployment slots
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on Labs</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../../M1/02/lab01.html">
+            
+                <a href="../../M1/02/lab01.html">
+            
+                    
+                    LAB 1 - Build a backend API by using Azure Storage and the Web Apps feature of Azure App Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../../M1/02/lab02.html">
+            
+                <a href="../../M1/02/lab02.html">
+            
+                    
+                    LAB 2 - Build a front-end web application by using Azure Web Apps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../../M1/02/lab03.html">
+            
+                <a href="../../M1/02/lab03.html">
+            
+                    
+                    LAB 3 - Clean up your subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../../M1/03/">
+            
+                <a href="../../M1/03/">
+            
+                    
+                    3. Implemente Azure functions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../../M1/03/Azure_functions.html">
+            
+                <a href="../../M1/03/Azure_functions.html">
+            
+                    
+                    3.1. Explore Azure Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../../M1/03/Develop_azure_functions.html">
+            
+                <a href="../../M1/03/Develop_azure_functions.html">
+            
+                    
+                    3.2. Develop Azure Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../../M1/03/Implement_functions.html">
+            
+                <a href="../../M1/03/Implement_functions.html">
+            
+                    
+                    3.3. Implement Durable Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on Labs</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../../M1/03/lab01.html">
+            
+                <a href="../../M1/03/lab01.html">
+            
+                    
+                    LAB 1 - Create Azure resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../../M1/03/lab02.html">
+            
+                <a href="../../M1/03/lab02.html">
+            
+                    
+                    LAB 2 - Configure a local Azure Functions project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../../M1/03/lab03.html">
+            
+                <a href="../../M1/03/lab03.html">
+            
+                    
+                    LAB 3 - Create a function that’s triggered by an HTTP request
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../../M1/03/lab04.html">
+            
+                <a href="../../M1/03/lab04.html">
+            
+                    
+                    LAB 4 - Create a function that triggers on a schedule
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.5" data-path="../../M1/03/lab05.html">
+            
+                <a href="../../M1/03/lab05.html">
+            
+                    
+                    LAB 5 - Create a function that integrates with other services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.6" data-path="../../M1/03/lab06.html">
+            
+                <a href="../../M1/03/lab06.html">
+            
+                    
+                    LAB 6 - Deploy a local function project to an Azure Functions app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.7" data-path="../../M1/03/lab07.html">
+            
+                <a href="../../M1/03/lab07.html">
+            
+                    
+                    LAB 7 - Clean up your subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Develop for Azure storage</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../../M2/01/">
+            
+                <a href="../../M2/01/">
+            
+                    
+                    4. Develop solutions that use Cosmos DB storage
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="../../M2/01/Cosmosdb_overview.html">
+            
+                <a href="../../M2/01/Cosmosdb_overview.html">
+            
+                    
+                    4.1. Explore Azure Cosmos DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.2" data-path="../../M2/01/Cosmosdb_structure.html">
+            
+                <a href="../../M2/01/Cosmosdb_structure.html">
+            
+                    
+                    4.2. Implement partitioning in Azure Cosmos DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.3" data-path="../../M2/01/Working_cosmosdb.html">
+            
+                <a href="../../M2/01/Working_cosmosdb.html">
+            
+                    
+                    4.3. Work with Azure Cosmos DB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on Labs</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../../M2/01/lab01.html">
+            
+                <a href="../../M2/01/lab01.html">
+            
+                    
+                    LAB 1 - Creating data store resources in Azure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../../M2/01/lab02.html">
+            
+                <a href="../../M2/01/lab02.html">
+            
+                    
+                    LAB 2 - Review and upload data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="../../M2/01/lab03.html">
+            
+                <a href="../../M2/01/lab03.html">
+            
+                    
+                    LAB 3 - Configure a .NET web application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="../../M2/01/lab04.html">
+            
+                <a href="../../M2/01/lab04.html">
+            
+                    
+                    LAB 4 - Clean up your subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../../M2/02/">
+            
+                <a href="../../M2/02/">
+            
+                    
+                    5. Develop solutions that use blob storage
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1.1" data-path="../../M2/02/Blob_storage_concepts.html">
+            
+                <a href="../../M2/02/Blob_storage_concepts.html">
+            
+                    
+                    5.1. Explore Azure Blob storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.1.2" data-path="../../M2/02/Blob_storage_lifecycle.html">
+            
+                <a href="../../M2/02/Blob_storage_lifecycle.html">
+            
+                    
+                    5.2. Manage the Azure Blob storage lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.1.3" data-path="../../M2/02/Working_blob_storage.html">
+            
+                <a href="../../M2/02/Working_blob_storage.html">
+            
+                    
+                    5.3. Work with Azure Blob storage
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on Labs</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../../M2/02/lab01.html">
+            
+                <a href="../../M2/02/lab01.html">
+            
+                    
+                    LAB 1 - Create Azure resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../../M2/02/lab02.html">
+            
+                <a href="../../M2/02/lab02.html">
+            
+                    
+                    LAB 2 - Upload a blob into a container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="../../M2/02/lab03.html">
+            
+                <a href="../../M2/02/lab03.html">
+            
+                    
+                    LAB 3 - Access containers by using the .NET SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="../../M2/02/lab04.html">
+            
+                <a href="../../M2/02/lab04.html">
+            
+                    
+                    LAB 4 - Retrieve blob Uniform Resource Identifiers (URIs) by using the .NET SDK
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="../../M2/02/lab05.html">
+            
+                <a href="../../M2/02/lab05.html">
+            
+                    
+                    LAB 5 - Clean up your subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Implement Azure security</li>
+        
+        
+    
+        <li class="chapter " data-level="12.1" data-path="../../M3/01/">
+            
+                <a href="../../M3/01/">
+            
+                    
+                    6. Implement use authentication and authorization
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="12.1.1" data-path="../../M3/01/Implement_auth.html">
+            
+                <a href="../../M3/01/Implement_auth.html">
+            
+                    
+                    6.1. Explore the Microsoft identity platform
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.1.2" data-path="../../M3/01/Microsoft_id_platform.html">
+            
+                <a href="../../M3/01/Microsoft_id_platform.html">
+            
+                    
+                    6.2. Implement authentication by using the Microsoft Authentication Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.1.3" data-path="../../M3/01/Implement_shared_access.html">
+            
+                <a href="../../M3/01/Implement_shared_access.html">
+            
+                    
+                    6.3. Implement shared access signatures
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="12.1.4" data-path="../../M3/01/Microsoft_graph.html">
+            
+                <a href="../../M3/01/Microsoft_graph.html">
+            
+                    
+                    6.4. Explore Microsoft Graph
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on Labs</li>
+        
+        
+    
+        <li class="chapter " data-level="13.1" data-path="../../M3/01/lab01.html">
+            
+                <a href="../../M3/01/lab01.html">
+            
+                    
+                    LAB 1 - Configure a single-tenant Azure AD environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.2" data-path="../../M3/01/lab02.html">
+            
+                <a href="../../M3/01/lab02.html">
+            
+                    
+                    LAB 2 - Create a single-tenant ASP.NET web app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="13.3" data-path="../../M3/01/lab03.html">
+            
+                <a href="../../M3/01/lab03.html">
+            
+                    
+                    LAB 3 - Clean up your lab environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="14.1" data-path="../../M3/02/">
+            
+                <a href="../../M3/02/">
+            
+                    
+                    7. Implement secure cloud solutions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="14.1.1" data-path="../../M3/02/Implement_key_vault.html">
+            
+                <a href="../../M3/02/Implement_key_vault.html">
+            
+                    
+                    7.1. Implement Azure Key Vault
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.1.2" data-path="../../M3/02/Implement_identities.html">
+            
+                <a href="../../M3/02/Implement_identities.html">
+            
+                    
+                    7.2. Implement managed identities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="14.1.3" data-path="../../M3/02/Implement_app_config.html">
+            
+                <a href="../../M3/02/Implement_app_config.html">
+            
+                    
+                    7.3. Implement Azure App Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on Labs</li>
+        
+        
+    
+        <li class="chapter " data-level="15.1" data-path="../../M3/02/lab01.html">
+            
+                <a href="../../M3/02/lab01.html">
+            
+                    
+                    LAB 1 - Create Azure resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.2" data-path="../../M3/02/lab02.html">
+            
+                <a href="../../M3/02/lab02.html">
+            
+                    
+                    LAB 2 - Configure secrets and identities
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.3" data-path="../../M3/02/lab03.html">
+            
+                <a href="../../M3/02/lab03.html">
+            
+                    
+                    LAB 3 - Build an Azure Functions app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.4" data-path="../../M3/02/lab04.html">
+            
+                <a href="../../M3/02/lab04.html">
+            
+                    
+                    LAB 4 - Access Azure Blob Storage data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="15.5" data-path="../../M3/02/lab05.html">
+            
+                <a href="../../M3/02/lab05.html">
+            
+                    
+                    LAB 5 - Clean up your subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Monitor, troubleshoot, and optimize Azure solutions</li>
+        
+        
+    
+        <li class="chapter " data-level="16.1" data-path="../../M4/01/">
+            
+                <a href="../../M4/01/">
+            
+                    
+                    8. Integrate caching and content delivery within solutions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="16.1.1" data-path="../../M4/01/Develop_cache_redis.html">
+            
+                <a href="../../M4/01/Develop_cache_redis.html">
+            
+                    
+                    8.1. Develop for Azure Cache for Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="16.1.2" data-path="../../M4/01/Develop_storage_cdn.html">
+            
+                <a href="../../M4/01/Develop_storage_cdn.html">
+            
+                    
+                    8.2. Develop for storage on CDNs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on Labs</li>
+        
+        
+    
+        <li class="chapter " data-level="17.1" data-path="../../M4/01/lab01.html">
+            
+                <a href="../../M4/01/lab01.html">
+            
+                    
+                    LAB 1 - Create Azure resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="17.2" data-path="../../M4/01/lab02.html">
+            
+                <a href="../../M4/01/lab02.html">
+            
+                    
+                    LAB 2 - Configure Content Delivery Network and endpoints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="17.3" data-path="../../M4/01/lab03.html">
+            
+                <a href="../../M4/01/lab03.html">
+            
+                    
+                    LAB 3 - Upload and configure static web content
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="17.4" data-path="../../M4/01/lab04.html">
+            
+                <a href="../../M4/01/lab04.html">
+            
+                    
+                    LAB 4 - Use Content Delivery Network endpoints
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="17.5" data-path="../../M4/01/lab05.html">
+            
+                <a href="../../M4/01/lab05.html">
+            
+                    
+                    LAB 5 - Clean up your subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="18.1" data-path="../../M4/02/">
+            
+                <a href="../../M4/02/">
+            
+                    
+                    9. Instrument solutions to support monitoring and logging
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="18.1.1" data-path="../../M4/02/Monitor_app.html">
+            
+                <a href="../../M4/02/Monitor_app.html">
+            
+                    
+                    9.1. Monitor app performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on Labs</li>
+        
+        
+    
+        <li class="chapter " data-level="19.1" data-path="../../M4/02/lab01.html">
+            
+                <a href="../../M4/02/lab01.html">
+            
+                    
+                    LAB 1 - Create and configure Azure resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="19.2" data-path="../../M4/02/lab02.html">
+            
+                <a href="../../M4/02/lab02.html">
+            
+                    
+                    LAB 2 - Monitor a local web API by using Application Insights
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="19.3" data-path="../../M4/02/lab03.html">
+            
+                <a href="../../M4/02/lab03.html">
+            
+                    
+                    LAB 3 - Monitor a web API using Application Insights
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="19.4" data-path="../../M4/02/lab04.html">
+            
+                <a href="../../M4/02/lab04.html">
+            
+                    
+                    LAB 4 - Application Insights logging with .NET
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="19.5" data-path="../../M4/02/lab05.html">
+            
+                <a href="../../M4/02/lab05.html">
+            
+                    
+                    LAB 5 - Clean up your subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Connect to and consume Azure services and third-party services</li>
+        
+        
+    
+        <li class="chapter " data-level="20.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    10. Implement API Management
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="20.1.1" data-path="API_Management.html">
+            
+                <a href="API_Management.html">
+            
+                    
+                    10.1. Explore API Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on Labs</li>
+        
+        
+    
+        <li class="chapter " data-level="21.1" data-path="lab01.html">
+            
+                <a href="lab01.html">
+            
+                    
+                    LAB 1 - Create an Azure App Service resource by using a Docker container image
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="21.2" data-path="lab02.html">
+            
+                <a href="lab02.html">
+            
+                    
+                    LAB 2 - Build an API proxy tier by using Azure API Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="21.3" data-path="lab03.html">
+            
+                <a href="lab03.html">
+            
+                    
+                    LAB 3 - Clean up your subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="22.1" data-path="../02/">
+            
+                <a href="../02/">
+            
+                    
+                    11. Develop event-based solutions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="22.1.1" data-path="../02/Event_grid.html">
+            
+                <a href="../02/Event_grid.html">
+            
+                    
+                    11.1. Explore Azure Event Grid
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="22.1.2" data-path="../02/Event_hubs.html">
+            
+                <a href="../02/Event_hubs.html">
+            
+                    
+                    11.2. Explore Azure Event Hubs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on Labs</li>
+        
+        
+    
+        <li class="chapter " data-level="23.1" data-path="../02/lab01.html">
+            
+                <a href="../02/lab01.html">
+            
+                    
+                    LAB 1 - Create Azure resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="23.2" data-path="../02/lab02.html">
+            
+                <a href="../02/lab02.html">
+            
+                    
+                    LAB 2 - Create an Event Grid subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="23.3" data-path="../02/lab03.html">
+            
+                <a href="../02/lab03.html">
+            
+                    
+                    LAB 3 - Publish Event Grid events from .NET
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="23.4" data-path="../02/lab04.html">
+            
+                <a href="../02/lab04.html">
+            
+                    
+                    LAB 4 - Clean up your subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="24.1" data-path="../03/">
+            
+                <a href="../03/">
+            
+                    
+                    12. Develop message-based solutions
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="24.1.1" data-path="../03/Message_queues.html">
+            
+                <a href="../03/Message_queues.html">
+            
+                    
+                    12.1. Discover Azure message queues
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on Labs</li>
+        
+        
+    
+        <li class="chapter " data-level="25.1" data-path="../03/lab01.html">
+            
+                <a href="../03/lab01.html">
+            
+                    
+                    LAB 1 - Create Azure resources
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="25.2" data-path="../03/lab02.html">
+            
+                <a href="../03/lab02.html">
+            
+                    
+                    LAB 2 - Create a .NET Core project to publish messages to a Service Bus queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="25.3" data-path="../03/lab03.html">
+            
+                <a href="../03/lab03.html">
+            
+                    
+                    LAB 3 - Create a .NET Core project to read messages from a Service Bus queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="25.4" data-path="../03/lab04.html">
+            
+                <a href="../03/lab04.html">
+            
+                    
+                    LAB 4 - Clean up your subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">EXTRA. Introduction to Azure Logic Apps</li>
+        
+        
+    
+        <li class="chapter " data-level="26.1" data-path="../../M6/01/azure_logic_apps.html">
+            
+                <a href="../../M6/01/azure_logic_apps.html">
+            
+                    
+                    Introduction to Azure Logic Apps
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Hands-on Labs</li>
+        
+        
+    
+        <li class="chapter " data-level="27.1" data-path="../../M6/01/lab01.html">
+            
+                <a href="../../M6/01/lab01.html">
+            
+                    
+                    LAB 1 - Set up the lab environment that consists of an Azure storage account and an Azure logic app
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="27.2" data-path="../../M6/01/lab02.html">
+            
+                <a href="../../M6/01/lab02.html">
+            
+                    
+                    LAB 2 - Configure Azure logic app to monitor changes to a resource group
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="27.3" data-path="../../M6/01/lab03.html">
+            
+                <a href="../../M6/01/lab03.html">
+            
+                    
+                    LAB 3 - Clean up your subscription
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >LAB 2 - Build an API proxy tier by using Azure API Management</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="lab-2-build-an-api-proxy-tier-by-using-azure-api-management">Lab 2: Build an API proxy tier by using Azure API Management</h2>
+<h4 id="task-1-create-an-api-management-resource">Task 1: Create an API Management resource</h4>
+<ol>
+<li><p>In the Azure portal, use the <strong>Search resources, services, and docs</strong> text box to search for <strong>API Management services</strong> and, in the list of results, select <strong>API Management services</strong>.</p>
+</li>
+<li><p>On the <strong>API Management services</strong> blade, select <strong>+ Create</strong>.</p>
+</li>
+<li><p>On the <strong>Install API Management gateway</strong> blade, perform the following actions, and then select <strong>Review + create</strong>:</p>
+</li>
+</ol>
+<pre><code>| Setting | Action |
+| -- | -- |
+| **Subscription** drop-down list | Retain the default value. |
+| **Resource group** section | Select the **ApiService** group that you created  earlier in the lab |
+| **Region** list | Select the same region you chose in the previous exercise |
+| **Resource name** text box | Enter **proapi** *[yourname]* |
+| **Organization name** text box | Enter **Contoso** |
+| **Administrator email** text  box | Enter `admin@contoso.com` |
+| **Pricing tier** drop-down list | **Consumption (99.95% SLA)** |
+
+The following screenshot displays the configured settings of **Create API Management** blade of the web application.
+
+![Create an API Management blade](images/l08_create_api_management.png)
+</code></pre><ol>
+<li><p>On the <strong>Review + create</strong> tab, review the option that you specified in the previous step, and then select <strong>Create</strong>.</p>
+<blockquote>
+<p><strong>Note</strong>: Wait for the creation task to complete before you continue with this lab.</p>
+</blockquote>
+</li>
+<li><p>On the <strong>Deployment Overview</strong> blade, select <strong>Go to resource</strong>.</p>
+</li>
+</ol>
+<h4 id="task-2-define-a-new-api">Task 2: Define a new API</h4>
+<ol>
+<li><p>On the <strong>API Management Service</strong> blade, in the <strong>APIs</strong> section, select <strong>APIs</strong>.</p>
+</li>
+<li><p>In the <strong>Define a new API</strong> section, select <strong>HTTP</strong>.</p>
+</li>
+<li><p>In the <strong>Create an HTTP API</strong> window, perform the following actions and select <strong>Create</strong>:</p>
+<p>| Setting | Action |
+| -- | -- |
+| <strong>Display name</strong> text box | Enter <strong>HTTPBin API</strong> |
+| <strong>Name</strong> text box | Enter <strong>httpbin-api</strong> |
+| <strong>Web service URL</strong> text box | Enter the URL for the web app that you copied earlier in this lab. <strong>Note</strong>: Make sure that the URL starts with the https:// prefix |
+| <strong>API URL suffix</strong> text box | Leave it empty |</p>
+<p>The following screenshot displays the configured settings of <strong>Create a blank API</strong> window of the web application.</p>
+<p><img src="images/l08_create_blank_api.png" alt="Create a blank API pane"></p>
+<blockquote>
+<p><strong>Note</strong>: Wait for the new API to finish being created.</p>
+</blockquote>
+</li>
+<li><p>On the <strong>Design</strong> tab, select <strong>+ Add operation</strong>.</p>
+</li>
+<li><p>In the <strong>Add operation</strong> section, perform the following actions, and then select <strong>Save</strong>:</p>
+</li>
+</ol>
+<pre><code>| Setting | Action |
+| -- | -- |
+| **Display name** text box | Enter **Echo Headers** |
+| **Name** text box | Verify that its value is set to **echo-headers** |
+| **URL** list | Select **GET** |
+| **URL** text box | Enter **/** |
+
+The following screenshot displays the configured settings of the **Add operation** section.
+
+![The properties of the Add Echo Headers operation](images/l08_add_echo_headers_operation.png)
+</code></pre><ol>
+<li><p>Back on the <strong>Design</strong> tab, in the list of operations, select <strong>Echo Headers</strong>.</p>
+</li>
+<li><p>In the <strong>Design</strong> section, on the <strong>Inbound processing</strong> tile select <strong>+ Add policy</strong>.</p>
+</li>
+<li><p>In the <strong>Add inbound policy</strong> section, select the <strong>Set headers</strong> tile.</p>
+</li>
+<li><p>In the <strong>Set Headers</strong> section, perform the following actions, and then select <strong>Save</strong>:</p>
+<p>| Setting | Action |
+| -- | -- |
+| <strong>Name</strong> text box    | Enter <strong>source</strong> |
+| <strong>Value</strong> text box | Select the list, select <strong>Add Value</strong>, and then enter <strong>azure-api-mgmt</strong> |
+| <strong>Action</strong> list | Select <strong>append</strong> |</p>
+<p>The following screenshot displays the configured settings of the <strong>Design</strong> section.</p>
+<p><img src="images/l08_get_echo_headers_design.png" alt="The Echo Headers design pane"></p>
+</li>
+<li><p>Back on the <strong>Design</strong> tab, in the list of operations, select <strong>Echo Headers</strong>.</p>
+</li>
+<li><p>In the <strong>Design</strong> section for <strong>Echo Headers</strong>, on the <strong>Backend</strong> tile, select the pencil icon.</p>
+</li>
+<li><p>In the <strong>Backend</strong> section, perform the following actions, and then select <strong>Save</strong>:</p>
+<p>| Setting | Action |
+| -- | -- |
+| <strong>Service URL</strong> section | Select the <strong>Override</strong> check box |
+| <strong>Service URL</strong> text box | Append the value <strong>/headers</strong> to its current value. <strong>Note</strong>: For example, if the current value is <code>http://httpapi[yourname].azurewebsites.net</code>, the new value will be <code>http://httpapi[yourname].azurewebsites.net/headers</code> |</p>
+</li>
+<li><p>Back on the <strong>Design</strong> tab, in the list of operations, select <strong>Echo Headers</strong>, and then select the <strong>Test</strong> tab.</p>
+</li>
+<li><p>In the <strong>Echo Headers</strong> section, select <strong>Send</strong>.</p>
+<p>The following screenshot displays the configured settings of the <strong>Echo Headers</strong> section.</p>
+<p><img src="images/l08_test_echo_headers.png" alt="The Test Echo Headers tab"></p>
+</li>
+<li><p>Review the results of the API request.</p>
+<blockquote>
+<p><strong>Note</strong>: Verify that there are many headers sent as part of your request that are echoed in the response. They should include the new <strong>Source</strong> header that you created as part of this task.</p>
+</blockquote>
+<p>The following screenshot displays the response to the <strong>Echo Headers</strong> request.</p>
+<p><img src="images/l08_response_to_echo_headers.png" alt="A response to the test echo headers request"></p>
+</li>
+<li><p>Select the <strong>Design</strong> tab to return to the list of operations.</p>
+</li>
+</ol>
+<h4 id="task-3-manipulate-an-api-response">Task 3: Manipulate an API response</h4>
+<ol>
+<li><p>On the <strong>Design</strong> tab, select <strong>+ Add operation</strong>.</p>
+</li>
+<li><p>In the <strong>Add operation</strong> section, perform the following actions, and then select <strong>Save</strong>:</p>
+<p>| Setting | Action |
+| -- | -- |
+| <strong>Display name</strong> text box | Enter <strong>Get Legacy Data</strong> |
+| <strong>Name</strong> text box | Verify that its value is set to <strong>get-legacy-data</strong> |
+| <strong>URL</strong> list | Verify that its value is set to <strong>GET</strong> |
+| <strong>URL</strong> text box | Enter <strong>/xml</strong> |</p>
+</li>
+<li><p>Back on the <strong>Design</strong> tab, in the list of operations, select <strong>Get Legacy Data</strong>.</p>
+</li>
+<li><p>Select the <strong>Test</strong> tab, and then select <strong>Send</strong>.</p>
+</li>
+<li><p>Review the results of the API request.</p>
+<blockquote>
+<p><strong>Note</strong>: At this point, the results should be in XML format.</p>
+</blockquote>
+<p>The following screenshot displays the results of the API request.</p>
+<p><img src="images/l08_response_to_get_legacy_data.png" alt="A response to the get legacy data request"></p>
+</li>
+</ol>
+<ol>
+<li><p>Select the <strong>Design</strong> tab, and then select <strong>Get Legacy Data</strong>.</p>
+</li>
+<li><p>On the <strong>Design</strong> pane, in the <strong>Outbound processing</strong> section, select <strong>Add policy</strong>.</p>
+<p>The following screenshot displays the <strong>Outbound processing</strong> section.</p>
+<p><img src="images/l08_get_legacy_data_outbound_processing.png" alt="An outbound processing section of the get legacy data operation"></p>
+</li>
+<li><p>In the <strong>Add outbound policy</strong> section, select the <strong>Other policies</strong> tile.</p>
+</li>
+<li><p>In the policy code editor, find the following block of XML content:</p>
+<pre><code>&lt;outbound&gt;
+    &lt;base /&gt;
+&lt;/outbound&gt;
+</code></pre></li>
+<li><p>Replace that block of XML with the following XML:</p>
+<pre><code>&lt;outbound&gt;
+    &lt;base /&gt;
+    &lt;xml-to-json kind=&quot;direct&quot; apply=&quot;always&quot; consider-accept-header=&quot;false&quot; /&gt;
+&lt;/outbound&gt;
+</code></pre></li>
+<li><p>In the policy code editor, select <strong>Save</strong>.</p>
+</li>
+<li><p>Back on the <strong>Design</strong> tab, in the list of operations, select <strong>Get Legacy Data</strong>, and then select <strong>Test</strong>.</p>
+</li>
+<li><p>In the <strong>Get Legacy Data</strong> section, select <strong>Send</strong>.</p>
+</li>
+<li><p>Review the results of the API request.</p>
+<blockquote>
+<p><strong>Note</strong>: The new results are in JavaScript Object Notation (JSON) format.</p>
+</blockquote>
+</li>
+<li><p>Within the <strong>HTTP response</strong> section, perform the following actions:</p>
+<ol>
+<li><p>Select <strong>Trace</strong>.</p>
+</li>
+<li><p>Review the content in the <strong>Backend</strong> and <strong>Outbound</strong> text boxes, and note that they include details of the corresponding API operations with their timing information.</p>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="task-4-manipulate-an-api-request">Task 4: Manipulate an API request</h4>
+<ol>
+<li><p>On the <strong>Design</strong> tab, select <strong>+ Add operation</strong>.</p>
+</li>
+<li><p>In the <strong>Add operation</strong> section, perform the following actions, and then select <strong>Save</strong>:</p>
+<p>| Setting  | Action |
+| -- | -- |
+| <strong>Display name</strong> text box | Enter <strong>Modify Status Code</strong> |
+| <strong>Name</strong> text box | Verify that its value is set to <strong>modify-status-code</strong> |
+| <strong>URL</strong> list | Select <strong>GET</strong> |
+| <strong>URL</strong> text box | Enter <strong>/status/404</strong> |</p>
+</li>
+<li><p>Back on the <strong>Design</strong> tab, in the list of operations, select <strong>Modify Status Code</strong>.</p>
+</li>
+<li><p>In the <strong>Design</strong> section, on the <strong>Inbound processing</strong> tile, select <strong>+ Add policy</strong>.</p>
+</li>
+<li><p>In the <strong>Add inbound policy</strong> section, select the <strong>Rewrite URL</strong> tile.</p>
+</li>
+<li><p>In the <strong>Rewrite URL</strong> section, perform the following actions:</p>
+<p>a.  In the <strong>Backend</strong> text box, enter <strong>/status/200</strong>.</p>
+<p>b.  Select <strong>Save</strong>.</p>
+</li>
+<li><p>Back on the <strong>Design</strong> tab, in the list of operations, select <strong>Modify Status Code</strong>, and then select the <strong>Test</strong> tab.</p>
+</li>
+<li><p>In the <strong>Modify Status Code</strong> section, select <strong>Send</strong>.</p>
+</li>
+<li><p>Review the results of the API request.</p>
+<blockquote>
+<p><strong>Note</strong>: Verify that the request returned the <strong>HTTP/1.1 200 OK</strong> response.</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="review">Review</h2>
+<p>In this exercise, you built a proxy tier between your App Service resource and any developers who wish to make queries against its API.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="lab01.html" class="navigation navigation-prev " aria-label="Previous page: LAB 1 - Create an Azure App Service resource by using a Docker container image">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="lab03.html" class="navigation navigation-next " aria-label="Next page: LAB 3 - Clean up your subscription">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"LAB 2 - Build an API proxy tier by using Azure API Management","level":"21.2","depth":1,"next":{"title":"LAB 3 - Clean up your subscription","level":"21.3","depth":1,"path":"M5/01/lab03.md","ref":"M5/01/lab03.md","articles":[]},"previous":{"title":"LAB 1 - Create an Azure App Service resource by using a Docker container image","level":"21.1","depth":1,"path":"M5/01/lab01.md","ref":"M5/01/lab01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"M5/01/lab02.md","mtime":"2023-01-08T00:50:21.371Z","type":"markdown"},"gitbook":{"version":"4.0.4","time":"2023-01-12T16:38:32.367Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
